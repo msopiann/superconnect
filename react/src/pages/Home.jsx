@@ -83,7 +83,7 @@ function Home() {
             "Explain things like you're talking to someone with mental illness and help them to feel better. make the answer you give in the style of language like a close friend.",
     };
 
-    const API_KEY = "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";
+    const API_KEY = "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";
 
     return (
         <div className="max-w-7xl mx-auto mt-12">
