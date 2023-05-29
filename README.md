@@ -9,10 +9,6 @@ Super connect is a digital product in the mental health segment that provides be
 - [@msopiann](https://www.github.com/msopiann)
 - [@thryna](https://www.github.com/thryna)
 - [@SriLestariii](https://www.github.com/SriLestariii)
-## Screenshots
-
-![App Screenshot](url('./public/img/chatbotUI.png'))
-
 
 ## Tech Stack
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
