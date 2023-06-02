@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { createContext, useContext, useEffect, useState } from "react";
 import axios from "../api/axios";
 import { useNavigate } from "react-router-dom";
@@ -48,6 +49,38 @@ export const AuthProvider = ({children}) => {
         }
     };
 
+    const updateData = async (...data) => {
+        await csrf();
+
+        setErrors([]);
+
+        try {
+            await axios.put('/update-profile', data);
+            await getUser();
+            navigate("/")
+        } catch (e) {
+            if(e.response.status === 422) {
+                setErrors(e.response.data.errors);
+            }
+        }
+    };
+
+    // const update = async({...data}) => {
+    //     await csrf();
+
+    //     setErrors([]);
+
+    //     try {
+    //         await axios.put('/update-profile', data);
+    //         await getUser();
+    //         navigate("/");
+    //     } catch (e) {
+    //         if(e.response.status === 422) {
+    //             setErrors(e.response.data.errors);
+    //         }
+    //     }
+    // };
+
     const logout = async() => {
         axios.post('/logout').then(() => {
             setUser(null);
@@ -59,16 +92,17 @@ export const AuthProvider = ({children}) => {
         if(!user) {
             getUser();
         }
-    }, []);
+    }, [user]);
 
     return (
     <AuthContext.Provider
-        value={{ user, errors, getUser, login, register, logout, csrf }}>
+        value={{ user, errors, getUser, login, register, updateData, logout, csrf }}>
             {children}
     </AuthContext.Provider>)
 }
 
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default function useAuthContext() {
     return useContext(AuthContext);
 }
