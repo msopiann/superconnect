@@ -8,7 +8,7 @@ Super connect is a digital product in the mental health segment that provides be
   * [Getting Started](#gettingstarted)
   * [Using Super Connect](#usingsuperconnect)
   * [Troubleshooting](#troubleshooting)
-  * [Support](#support)
+  * [Contact](#support)
 
 # Getting Started
 
