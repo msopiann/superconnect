@@ -13,6 +13,7 @@ Super connect is a digital product in the mental health segment that provides be
 # Getting Started
 
 * System Requirements
+
 Before installing and using Super Connect, ensure that your device must have a stable internet connection.
 
 - Installation
