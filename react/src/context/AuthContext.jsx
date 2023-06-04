@@ -55,7 +55,7 @@ export const AuthProvider = ({children}) => {
         setErrors([]);
 
         try {
-            await axios.put('/update-profile', data);
+            await axios.put('/user', data);
             await getUser();
             navigate("/")
         } catch (e) {
@@ -64,22 +64,6 @@ export const AuthProvider = ({children}) => {
             }
         }
     };
-
-    // const update = async({...data}) => {
-    //     await csrf();
-
-    //     setErrors([]);
-
-    //     try {
-    //         await axios.put('/update-profile', data);
-    //         await getUser();
-    //         navigate("/");
-    //     } catch (e) {
-    //         if(e.response.status === 422) {
-    //             setErrors(e.response.data.errors);
-    //         }
-    //     }
-    // };
 
     const logout = async() => {
         axios.post('/logout').then(() => {

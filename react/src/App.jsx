@@ -12,7 +12,7 @@ import UpdateProfile from "./pages/UpdateProfile";
 
 function App() {
     return (
-        <div className="bg-slate-100 min-h-screen">
+        <div className="bg-slate-100 min-h-screen dark:bg-black">
             <Routes>
                 <Route element={<AuthLayout />}>
                     <Route path="/" element={<Home />}></Route>

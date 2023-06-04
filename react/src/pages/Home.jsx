@@ -80,10 +80,10 @@ function Home() {
     const systemMessage = {
         role: "system",
         content:
-            "explain something like you are an Indonesian statesman.",
+            "explain something the way you would explain it to someone with a mental illness. help them to get a better feeling. respond as if you were a close friend.",
     };
 
-    const API_KEY = "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";
+    const API_KEY = "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"
 
     return (
         <div className="max-w-7xl mx-auto mt-12">
