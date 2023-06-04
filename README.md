@@ -5,12 +5,12 @@ Super connect is a digital product in the mental health segment that provides be
 
 
 # Table of Contents
-  * [Getting Started](#gettingstarted)
-  * [Using Super Connect](#usingsuperconnect)
-  * [Troubleshooting](#troubleshooting)
-  * [Contact](#contact)
+  - [Getting Started](#getting%20started)
+  - [Using Super Connect](#using%20super%20connect)
+  - [Troubleshooting](#troubleshooting)
+  - [Contact](#contact)
 
-## Getting Started
+# Getting Started
 
 * System Requirements
 Before installing and using Super Connect, ensure that your device must have a stable internet connection.
@@ -73,7 +73,7 @@ Before installing and using Super Connect, ensure that your device must have a s
     npm run start
     ```
 
-## Using Super Connect
+# Using Super Connect
 
 - Accessing the Super Connect
     
@@ -106,7 +106,7 @@ Before installing and using Super Connect, ensure that your device must have a s
 
 Note: Super Connect's capabilities may vary based on its configuration at the given prompt (the more complete the prompt is, the better the answer Super Connect gives).
 
-## Troubleshooting
+# Troubleshooting
 
 - Common Issues
     
@@ -120,7 +120,7 @@ Note: Super Connect's capabilities may vary based on its configuration at the gi
     
         - Solution: Review your input for clarity and try rephrasing your query. If the issue persists, report the problem to our support team.
 
-## Contact
+# Contact
 
 If you have any feedback, please reach out to us at ghealth.psti@gmail.com
 
