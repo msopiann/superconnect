@@ -9,6 +9,7 @@ import ResetPassword from "./pages/ResetPassword";
 import AuthLayout from "./layouts/AuthLayout";
 import GuestLayout from "./layouts/GuestLayout";
 import UpdateProfile from "./pages/UpdateProfile";
+import UpdateProfilePassword from "./pages/UpdateProfilePassword";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Route element={<AuthLayout />}>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/update-profile" element={<UpdateProfile />}></Route>
+                    <Route path="/profile-password" element={<UpdateProfilePassword />}></Route>
                 </Route>
 
                 <Route element={<GuestLayout />}>

@@ -40,8 +40,8 @@ const ImageUpload = ({ onUpload }) => {
 
 function UpdateProfile() {
     const [newData, setNewData] = useState({
-        name: "",
-        email: "",
+        password: "",
+        newPassword: "",
     });
 
     const api = axios.create({
@@ -177,12 +177,26 @@ function UpdateProfile() {
                         <form onSubmit={updateData}>
                             <div className="mb-6">
                                 <label className="block mb-2 text-sm font-medium text-blue-700 uppercase dark:text-white">
-                                    Name
+                                    Old Password
                                 </label>
                                 <input
                                     type="text"
                                     id="name"
-                                    value={newData.name}
+                                    value={newData.password}
+                                    onChange={handleInputChange}
+                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:text-dark"
+                                    required
+                                />
+                            </div>
+
+                            <div className="mb-6">
+                                <label className="block mb-2 text-sm font-medium text-blue-700 uppercase dark:text-white">
+                                    New Password Confirmation
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    value={newData.password}
                                     onChange={handleInputChange}
                                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:text-dark"
                                     required
@@ -190,12 +204,12 @@ function UpdateProfile() {
                             </div>
                             <div className="mb-6">
                                 <label className="block mb-2 text-sm font-medium text-blue-700 uppercase dark:text-white">
-                                    Email
+                                    New Password
                                 </label>
                                 <input
                                     type="email"
                                     id="email"
-                                    value={newData.email}
+                                    value={newData.password}
                                     onChange={handleInputChange}
                                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:text-dark"
                                     required

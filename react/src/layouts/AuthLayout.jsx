@@ -80,7 +80,6 @@ const AuthLayout = () => {
                   pr-4
                   pl-3
                   text-gray-50
-                  hover:bg-gray-700
                 "
                                         >
                                             Logout

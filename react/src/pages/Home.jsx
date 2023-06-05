@@ -10,7 +10,7 @@ import {
 } from "@chatscope/chat-ui-kit-react";
 import useAuthContext from "../context/AuthContext";
 
-function Home() {
+function Home () {
     const { user } = useAuthContext();
 
     const [messages, setMessages] = useState([
@@ -83,7 +83,7 @@ function Home() {
             "explain something the way you would explain it to someone with a mental illness. help them to get a better feeling. respond as if you were a close friend.",
     };
 
-    const API_KEY = "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"
+    const API_KEY = "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"
 
     return (
         <div className="max-w-7xl mx-auto mt-12">
